@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 页面未找到</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;  /* 最大宽度限制 */
+            width: 100%;
+            padding: 20px;
+        }
+
+        .left-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-side img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 120px;  /* 增大标题字体 */
+            color: #1A1A1A;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 24px;  /* 增大正文字体 */
+            color: #333;
+            margin-bottom: 30px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 50px;  /* 增大按钮尺寸 */
+            font-size: 20px;
+            background-color: white;
+            color: #4CAF50;
+            text-decoration: none;
+            border: 2px solid #4CAF50;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 96px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .btn {
+                padding: 14px 40px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .right-side {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 72px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+    <script>
+        // 页面加载后开始倒计时
+        window.onload = function() {
+            // 3000 毫秒 = 3 秒
+            setTimeout(function() {
+                window.location.href = '/';  // 将 '/' 替换为你的首页 URL
+            }, 3000);
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" width="256px" height="256px" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#231F20;" d="M57,0H3C1.346,0,0,1.346,0,3v56c0,0.552,0.448,1,1,1h58c0.552,0,1-0.448,1-1V3 C60,1.346,58.654,0,57,0z M3,2h54c0.551,0,1,0.449,1,1v5H2V3C2,2.449,2.449,2,3,2z M19,53v5h-8v-5H19z M21,53h8v5h-8V53z M31,53h8 v5h-8V53z M41,53h8v5h-8V53z M2,51V17h56v34H2z M2,15v-5h56v5H2z M2,53h7v5H2V53z M51,58v-5h7v5H51z"></path> <rect x="5" y="4" style="fill:#231F20;" width="4" height="2"></rect> <rect x="12" y="4" style="fill:#231F20;" width="4" height="2"></rect> <path style="fill:#231F20;" d="M16,24h-2v13H8V24H6v14c0,0.552,0.448,1,1,1h7v6h2v-6h3v-2h-3V24z"></path> <path style="fill:#231F20;" d="M54,37h-3V24h-2v13h-6V24h-2v14c0,0.552,0.448,1,1,1h7v6h2v-6h3V37z"></path> <path style="fill:#231F20;" d="M30,24c-3.86,0-7,3.14-7,7v7c0,3.86,3.14,7,7,7s7-3.14,7-7v-7C37,27.14,33.86,24,30,24z M35,38 c0,2.757-2.243,5-5,5s-5-2.243-5-5v-7c0-2.757,2.243-5,5-5s5,2.243,5,5V38z"></path> </g> </g></svg>
+        </div>
+        <div class="right-side">
+            <h1>404</h1>
+            <p>哎呀！您迷路了 ～</p>
+            <p>您要查看的页面不存在。页面将在 3 秒后自动跳转到首页...</p>
+            <a href="https://bysocket.com/" class="btn">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>
