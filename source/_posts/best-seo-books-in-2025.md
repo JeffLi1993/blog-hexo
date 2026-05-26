@@ -66,9 +66,6 @@ SEO 在 AI 时代总是在变，你得持续学习。这几个博客就像是行
 
 ### 中文圈（主要聊出海）
 
-哥飞（@gefei55）
-https://x.com/gefei55
-
 大罗SEO（@daluoseo）
 https://x.com/daluoseo
 
