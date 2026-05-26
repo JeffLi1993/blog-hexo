@@ -1,6 +1,7 @@
 ---
 title: ChatGPT和我的出海增长碎碎念
 date: 2026-05-08 10:00:00
+header_img: https://bysocket.com/images/hello-world/header-img.webp
 tags:
   - 出海
   - 增长
