@@ -1258,4 +1258,36 @@ article .post-container h2::after {
     width:0;
 }
 
+/* WeChat Ad */
+.wechat-ad {
+    margin: 30px 0 20px;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8f0e8 100%);
+    border-radius: 12px;
+    border: 1px solid #d4e8d4;
+}
+.wechat-ad-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.wechat-ad-text {
+    text-align: center;
+}
+.wechat-ad-qrcode {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+@media (max-width: 480px) {
+    .wechat-ad-inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 
