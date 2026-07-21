@@ -1,227 +1,140 @@
 ---
-title: 无聊蒸馏自己：长文转爆款社媒帖子 Agent Skill 开源
-date: 2026-07-22 05:00:00
-header_img: https://bysocket.com/images/content-repurposing-agent-skill/01-case-overview.png
+title: 开源：把自己"博客转推文"蒸馏成一个 Agent Skill
+date: 2026-06-08 09:40:00
 tags:
   - Agent Skill
-  - 内容分发
-  - AI Agent
+  - 内容再分发
+  - 开源
 categories:
   - Agent Skill
+header_img: https://bysocket.com/images/hello-world/header-img.webp
 ---
 
-> 首先这里特别感谢 ChenChang x.com/changchen_cc 在 WorkShop 中分享 KOL Marketing 中分享了下这个 Viral Content。感谢启发 ～
+![图 01：一篇长文，拎出一个最值得传播的观点，再改写成 X 和 LinkedIn 的原生内容。](https://bysocket.com/images/content-repurposing-agent-skill/distill-one-insight.webp)
 
-## 一、先看效果
+写完一篇博客，最累的往往不是写，是后面那一遍遍的"再分发"
 
-**Agent Skill GitHub 地址：**
+同一篇文章，要拆成 Twitter/X 上一条短而锐的帖子，还要改一版更职业化的 LinkedIn。每次都得重新找那个最值得传播的观点、抠平台字数、判断要不要蹭热点、再配张图。这套动作我做了无数遍，逻辑基本固定
 
-[https://github.com/JeffLi1993/content-repurposing-skills](https://github.com/JeffLi1993/content-repurposing-skills)
+所以我把它蒸馏成了一组 Skill：**content-repurposing-skills**。给它一篇真实文章，它直接产出平台原生文案、基于原文的传播角度、可验证的热点适配，以及一套主视觉配图
 
-实操一个案例：
+**开源 + 免费，欢迎用起来、提 PR、多交流 ～**
 
-![image.png](https://bysocket.com/images/content-repurposing-agent-skill/01-case-overview.png)
+GitHub 地址：
 
-文章：[https://bysocket.com/seo-link-building-conversion-data/](https://bysocket.com/seo-link-building-conversion-data/)
+<https://github.com/JeffLi1993/content-repurposing-skills>
 
-如上图，等会，给出下面两个结果挺好的：
+先看个案例：
 
-#### 结果一：
+![image.png](https://bysocket.com/images/content-repurposing-agent-skill/case-study.webp)
 
-![7cee846a3c92c5a357a6f0817170001b.png](https://bysocket.com/images/content-repurposing-agent-skill/02-result-one.png)
+## 一、为什么做这个？
 
-#### 结果二：
+做内容的都知道，再分发是个"看起来简单、做起来磨人"的活：
 
-![1eae309609520f5444098687d3910821.png](https://bysocket.com/images/content-repurposing-agent-skill/03-result-two.png)
+- 一篇长文，要先想清楚哪个观点最值得单独拎出来传播
 
-我们选个 Post 2，后会建议你配图方案
+- Twitter/X 和 LinkedIn 的语气、长度、结构完全不一样，不能一稿两投
 
-![6345b32b34453f06b458a384b74c3a6c.png](https://bysocket.com/images/content-repurposing-agent-skill/04-image-options.png)
+- 平台字数、媒体规格、热点时效，每个都得现查
 
-你选个配图方案后。将配图 + 文案 自动发布即可！！！
+- 还得配一张值得收藏或转发的图
 
-## 二、为什么做这个
+**这里面 80% 是有固定章法的判断，20% 才是真正需要现场拿捏的创意。**
 
-做内容的人都知道，写完一篇长文只是开始。真正吃时间的是**分发。**
+而且最容易出问题的地方很一致：要么机械总结成流水账，要么为了蹭热点硬扯一个不相关的话题，要么干脆编一句根本不在原文里的"金句"。
 
-把一篇 3000 字的博客，拆成适合 LinkedIn、X、小红书的短帖子，还得每个平台调语气、换结构、想 Hook、配图。
+![图 02：再分发最容易翻车的三个坑——流水账、硬蹭热点、编假金句。](https://bysocket.com/images/content-repurposing-agent-skill/three-pitfalls.webp)
 
-我自己做了大半年内容分发，总结下来就两个字：**重复**。
+所以这组 Skill 刻意做了三件事来兜底：
 
-**Agent Skill GitHub 地址：**
+**原文锚定**保证不胡编
 
-[https://github.com/JeffLi1993/content-repurposing-skills](https://github.com/JeffLi1993/content-repurposing-skills)
+**编辑策略**避免把博客压成摘要
 
-每次都是同一套动作：
+**运行时适配**保证平台规则和热点信息不过期、也不为追热点牺牲相关性
 
-- 从长文里挑出 2-3 个核心观点
+## 二、里面有什么
 
-- 针对不同平台改写开头（领英要专业叙事，X 要短平快）
+v1.0 目前包含两个 Skill，按平台分工：
 
-- 想一个能让人停下来的 Hook
-
-- 加互动引导和 CTA
-
-- 配一张能传达核心信息的图
-
-80% 的工作是策略性的重复劳动，20% 是对具体内容的判断。
-
-上次做 seo-audit-skill，我用的是 **Script + LLM 双层架构，**脚本跑确定性检查，LLM 做语义判断。
-
-但内容分发这件事不一样：没有 API 可以调，没有 HTML 可以解析，核心全是**策略知识。**什么样的 Hook 能拿到注意力，怎么从一篇文章里提取不同角度，怎么让三篇帖子互不重复又各有分工。
-
-所以这次的思路是：**把策略知识蒸馏成 Prompt，让 Agent 按我的方法论执行。**
-
-![](https://bysocket.com/images/content-repurposing-agent-skill/05-strategy-distill.png)
-
-## 三、它能干什么
-
-给它一篇长文（博客、研究报告、案例分析、产品指南都行），它会输出**3 篇差异化的社媒帖子**，覆盖 LinkedIn 和 X 两个平台。
-
-每篇帖子包含：
-
-- **ICP 推断**：自动判断目标读者是谁（具体到角色、痛点、认知阶段）
-
-- **Hook**：从 5 个候选里评分选出最强的开头
-
-- **Value Content**：源内容支撑的价值主体，不是泛泛总结
-
-- **互动引导**：让读者想评论的问题设计
-
-- **软 CTA**：不硬推，自然过渡到行动
-
-- **置顶/首评 CTA**：带转化链接的评论区内容
-
-**Agent Skill GitHub 地址：**
-
-[https://github.com/JeffLi1993/content-repurposing-skills](https://github.com/JeffLi1993/content-repurposing-skills)
-
-三篇帖子不是同一篇文章的三种改写，而是一个**内容组合**：
-
-| 帖子 | 主要职责 | 典型角度 |
+| Skill | 平台 | 适合什么时候用 |
 | --- | --- | --- |
-| Post 1 | Attention（拿注意力） | 反直觉观点、信念颠覆 |
-| Post 2 | Engagement（拿互动） | 框架、清单、决策规则 |
-| Post 3 | Conversion（拿转化） | 故事、案例、资源桥接 |
+| `blog-to-twitter-post` | Twitter/X | 需要一条短、锐利、适合信息流传播的帖子，配一张能收藏或转发的视觉 |
+| `blog-to-linkedin-post` | LinkedIn | 需要更职业化的观点型内容，输出多个版本并推荐最适合发布的一版 |
 
-选完帖子后，还会推荐 3 种配图方案，选一个直接生成。
+ps：自然还有很多平台，不同平台热点不同、规则不同，还在陆续新增 ing。比如 LinkedIn 轮播图、Twitter Threads、小红书、即刻等等
 
-支持中英文。中文模式有专门的**去 AI 化写作规则**——不是翻译英文帖子，而是用中文社媒的原生节奏重写。
+**开源 + 免费，欢迎用起来、提 PR、多交流 ～**
 
-## 四、怎么用
+GitHub 地址：
 
-两种方式：
+<https://github.com/JeffLi1993/content-repurposing-skills>
 
-### 方式 1：CLI 安装
+目前两个 Skill 都要求输入真实的博客正文，至少 500 字以上。因为按正文信息量等价判断，才有内容派生的价值。
 
-```bash
-npx skills add JeffLi1993/content-repurposing-skills --skill long-blog-to-viral-social-posts
-```
+![图 03：一篇文章进去，经过一条带 AI 脑子的固定流水线，产出一套发布包。](https://bysocket.com/images/content-repurposing-agent-skill/pipeline-overview.webp)
 
-### 方式 2：插件安装
+**其核心工作流是比较固定带 AI 脑子的流水线，而不是一句 prompt 碰运气：**
 
-```plaintext
-/plugin marketplace add JeffLi1993/content-repurposing-skills
-/plugin install long-blog-to-viral-social-posts
-```
+- **提炼主线**：主题、受众痛点、核心洞察、证据、最佳传播角度
 
-装好后直接对话：
+- **灵魂金句**：从 5-8 个候选里选出最有传播力、又忠于原文的一句
 
-```plaintext
-把这篇文章转成 3 条社媒帖子：https://your-blog-url.com/post
-```
+- **平台规则**：输出前现查最新字符规则与媒体规范
 
-它会自动抓取内容、清洗、提取、生成。你选一条帖子，它再推荐配图方案，选完直接出图。
+- **热点扫描**：只用和文章确实有关、近 30 天内可验证的趋势，不强行蹭
 
-## 五、核心设计思路
+- **角度选择**：X 平台 & LinkedIn 平台的角度
 
-这个 Skill 和 seo-audit 最大的区别：**没有一行脚本，全靠策略知识蒸馏。**
+- **配图方案**：视觉目标、信息结构、图片规格、图片文案
 
-![](https://bysocket.com/images/content-repurposing-agent-skill/06-no-script.png)
+每次跑完，你拿到的是一套结构化的发布包：推荐文案（含 CTA、hashtag、字符与规则检查） + 配图视觉方案。还会告诉你热点适配 + 趋势来源。
 
-seo-audit 的逻辑是"能用代码确认的就不让 LLM 猜" - robots.txt 存不存在，跑个 HTTP 请求就知道了。但内容分发没有这种确定性检查，核心全是决策：从哪个角度切、Hook 怎么写、三篇帖子怎么分工。
+强调下**没验证到相关热点，就老实走常青版本，不硬蹭。**
 
-所以我做的事情是：**把自己手动做了上百次内容分发的经验，编码成一套可执行的工作流。**
+## 三、怎么用？
 
-具体来说，蒸馏了这几层知识：
-
-**1. 原子提取框架**
-
-长文不是拿来总结的，是拿来拆的。我定义了 9 类"内容原子"——Claims、Data、Insights、Frameworks、Stories、Proof、Quotes、Objections、Resources。Agent 先把长文拆成这些原子，再从中组合帖子。
-
-**2. 组合策略**
-
-三篇帖子不能用同一个原子、同一个 Hook 家族、同一种互动机制。这是我反复踩坑总结出来的：如果三条帖子只是换了开头，读者一眼就看出来是同一篇文章的三种包装。
-
-**3. 70/20/10 评分模型**
-
-每篇帖子用 100 分制打分：Attention 占 70（Hook 25 + 观点 15 + 洞察 15 + 模式打断 15），Engagement 占 20，Conversion 占 10。低于 80 分的自动修订。这个权重分配是我观察了大量爆款帖子后总结的——社媒上，注意力就是一切的前提。
-
-**4. Hook 生成流程**
-
-不是直接写一个 Hook，而是先生成 5 个候选，从不同的 Hook 家族里选，然后按张力、好奇缺口、简洁度、ICP 相关性、证据匹配度打分，选最强的那个。
-
-**5. 中文去 AI 化规则**
-
-中文社媒帖子最怕的就是"翻译腔"和"AI 味"。我专门写了一套规则：用中文原生节奏重建句序，不直译英文连接词；保留作者第一人称经验；具体事实优先于抽象判断；干掉重复的二元对比、假洞察标记、讲课式铺垫。
-
-整个 Skill 就是一份 SKILL.md + 两份参考文档（Hook 模板库和平台规则），没有脚本依赖。纯粹靠把策略知识写得足够精确、足够结构化，让 Agent 能按步骤执行。
-
-## 六、项目结构
+支持任何 Agent 安装，命令很简单：
 
 ```plaintext
-content-repurposing-skills/
-└── long-blog-to-viral-social-posts/
-    ├── SKILL.md                          # Skill 定义 + 12步工作流
-    └── references/
-        ├── hook-templates.md             # Hook 模板库（按家族分类）
-        └── platform-rules.md             # LinkedIn / X 平台规则
+npx skills add JeffLi1993/content-repurposing-skills --skill blog-to-twitter-post
 ```
 
-**Agent Skill GitHub 地址：** 
+然后把文章正文丢给它就行。跑的时候，你还可以补充这些上下文：
 
-[https://github.com/JeffLi1993/content-repurposing-skills](https://github.com/JeffLi1993/content-repurposing-skills)
+目标语言（中文 / 英文）、目标受众、文案风格、品牌或产品背景、原文 URL、语气约束。但其实我一般不给。
 
-## 欢迎交流
+也可以用 Youmind，打开下面地址就可以使用了
 
-这个工具是我自己做内容分发时的效率产物，希望能帮到同样在做内容的朋友。
+<https://youmind.com/skills/g2tYvZbnZnQDfR>
 
-**如果你：**
+## 四、这组 Skill 刻意保持严格
 
-- 经常写长文但没精力做分发 - 直接用
+![图 04：它像个严格的守门员，把太短的选题、假金句、硬蹭的热点挡在门外。](https://bysocket.com/images/content-repurposing-agent-skill/strict-gatekeeper.webp)
 
-- 觉得生成的帖子哪里不对 - 提 Issue
+它会在这些地方主动卡你，而不是讨好你：
 
-- 有更好的 Hook 模板或平台规则补充 - 提 PR
+- 输入太短、是选题而非成文，会被退回，不会硬凑
 
-**开源 + 免费，期待你的反馈！**
+- 不编造无来源的结论，不伪造金句，不夸大原文事实
 
-**Agent Skill GitHub 地址：** 
+- 不把热门话题硬安到不相关的文章上
 
-[https://github.com/JeffLi1993/content-repurposing-skills](https://github.com/JeffLi1993/content-repurposing-skills)
+- 默认走标准公开帖，不擅自上长文或线程
+
+**约束本身就是质量的一部分。** 一个什么都肯帮你说的工具，往往什么都说不准。
 
 ## 最后说两句
 
-上次 seo-audit-skill 我说的是先手动跑几十个网站，才知道哪些检查该用脚本、哪些该用 LLM。
+这组 Skill 能跑通，不是因为我写了多聪明的 prompt，是因为这套再分发的判断，我自己先做顺了很多遍：哪个观点值得拎出来、哪句能当金句、什么热点值得蹭、什么图才有人存。
 
-这次也一样。这个 Skill 里的每一条规则：
+**先把自己的经验蒸馏出来，再交给 Agent，它才知道什么是好、什么是坏。** 反过来，拿一个烂大街的 prompt 去硬套，出来的也只能是平庸的流水账 ～
 
-原子怎么提取、Hook 怎么评分、三篇帖子怎么分工
+把重复流程变成可复用能力，这就是 Skill 的意义。希望它能帮你把省下的时间，花在更值得的内容上 🚀
 
-都不是我拍脑袋想出来的，是手动做了上百次内容分发，一条条总结出来的。
+GitHub:
 
-**蒸馏自己，就是把隐性经验变成显性规则，再把显性规则编码成可执行的工作流。**
+<https://github.com/JeffLi1993/content-repurposing-skills>
 
-这件事 AI 替代不了你。它能执行你的策略，但策略本身得你自己先趟出来。
-
-没有下过苦功夫的人，写不出精确的 Prompt；没有反复踩过坑的人，不知道哪些环节需要约束、哪些地方需要留白。
-
-所以我的建议还是那句话：**先自己做，做到能教别人，再让 AI 帮你规模化。**
-
-![](https://bysocket.com/images/content-repurposing-agent-skill/07-closing.png)
-
-希望这个工具能帮你省点分发的时间，把精力放在写出更好的内容上 🚀
-
-**Agent Skill GitHub 地址：** 
-
-[https://github.com/JeffLi1993/content-repurposing-skills](https://github.com/JeffLi1993/content-repurposing-skills)
+觉得有用给个 Star ⭐，有想法提 Issue，想交流随时找我 ～
