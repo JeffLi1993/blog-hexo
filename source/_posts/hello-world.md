@@ -7,8 +7,6 @@ author: "子木"
 header-img: "https://bysocket.com/images/hello-world/header-img.webp"
 ---
 
-![image.png](https://bysocket.com/images/hello-world/header-img.webp)
-
 读者，你好
 
 我是子木
