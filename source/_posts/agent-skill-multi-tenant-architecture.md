@@ -7,7 +7,7 @@ tags:
   - 多租户
   - AI 架构
 categories: AI
-header-img: https://bysocket.com/images/agent-skill-multi-tenant-architecture/header-img.webp
+header-img: https://bysocket.com/images/hello-world/header-img.webp
 ---
 
 有天晚上，我在想一个事情：现在开源 Agent Skills 有 **2,330,640** 个，以后只会更多。这么多 Skills，多少会过时？多少会死去，成为历史的尘埃！
