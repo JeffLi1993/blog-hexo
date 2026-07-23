@@ -4,10 +4,10 @@ title: "关于子木"
 description: "关于子木，从「程序员泥瓦匠」写技术博客，到现在「写增长的子木」写一写 AI 出海增长相关的。10 年的 SaaS、营销、电商和 AI 等领域经验，一路从技术开发到产品与增长负责人"
 date: 2026-07-06 12:00
 author: "子木"
-header-img: "https://bysocket.com/images/hello-world/header-img.png"
+header-img: "https://bysocket.com/images/hello-world/header-img.webp"
 ---
 
-![image.png](https://bysocket.com/images/hello-world/header-img.png)
+![image.png](https://bysocket.com/images/hello-world/header-img.webp)
 
 读者，你好
 
