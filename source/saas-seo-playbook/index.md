@@ -19,7 +19,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 ### 零、写在前面
 
 - ✅ [0.1 为什么写这本小册子](/saas-seo-playbook/00-01-why-this-book/)
-- ⏳ 0.2 现代 SEO 要当成一套系统来做（即将发布）
+- ✅ [0.2 现代 SEO 要当成一套系统来做](/saas-seo-playbook/00-02-modern-seo-system/)
 
 ### 第一部分：认知打底 — 先把 SEO 想对
 
