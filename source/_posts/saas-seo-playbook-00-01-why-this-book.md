@@ -10,6 +10,8 @@ permalink: /saas-seo-playbook/00-01-why-this-book/
 header-img: https://bysocket.com/images/hello-world/header-img.webp
 ---
 
+> 📖 本文是《AI 工具站 SEO 小册子：图解入门》的一部分，完整目录与源文件见 GitHub：[JeffLi1993/saas-seo-playbook](https://github.com/JeffLi1993/saas-seo-playbook/blob/main/README.md)
+
 我一直推崇一个观点：**把网站当成一本书，也当成一个内容产品来做增长。**
 
 网站首页像封面，目录结构像大纲，每个页面就是一个章节。

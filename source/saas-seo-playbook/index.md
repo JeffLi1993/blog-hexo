@@ -9,6 +9,8 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 从认知到基建，从内容到外链，再到规模化与增长复盘。全书按实际执行顺序展开，可以从头读到尾，也可以在遇到问题时直接翻对应章节。
 
 > 暂不卖课，纯爱好整理。踩过的坑、看过的案例、阶段性的思考，都在这儿。
+>
+> 📖 完整目录与源文件见 GitHub：[JeffLi1993/saas-seo-playbook](https://github.com/JeffLi1993/saas-seo-playbook/blob/main/README.md)
 
 ---
 
