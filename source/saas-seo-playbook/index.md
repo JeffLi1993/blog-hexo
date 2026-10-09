@@ -24,7 +24,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 ### 第一部分：认知打底 — 先把 SEO 想对
 
 - ✅ [第 1 章 SEO 不是排名技巧，是一套增长系统](/saas-seo-playbook/01-seo-is-a-system/)
-- 第 2 章 找到你的 SEO 理想用户画像
+- ✅ [第 2 章 找到你的 SEO 理想用户画像](/saas-seo-playbook/02-seo-ideal-customer-profile/)
 - 第 3 章 搜索意图与 Last-Click
 - 第 4 章 寻找并看懂真正的 SEO 竞争对手
 
