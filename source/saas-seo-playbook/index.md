@@ -25,7 +25,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 - ✅ [第 1 章 SEO 不是排名技巧，是一套增长系统](/saas-seo-playbook/01-seo-is-a-system/)
 - ✅ [第 2 章 找到你的 SEO 理想用户画像](/saas-seo-playbook/02-seo-ideal-customer-profile/)
-- 第 3 章 搜索意图与 Last-Click
+- ✅ [第 3 章 搜索意图与 Last-Click](/saas-seo-playbook/03-search-intent-and-last-click/)
 - 第 4 章 寻找并看懂真正的 SEO 竞争对手
 
 ### 第二部分：站点规划 — 先定大纲和章节，再写文章
