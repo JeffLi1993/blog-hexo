@@ -30,7 +30,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 ### 第二部分：站点规划 — 先定大纲和章节，再写文章
 
-- 第 5 章 从关键词研究到 Topic Map
+- ✅ [第 5 章 从关键词研究到 Topic Map](/saas-seo-playbook/05-keyword-research-to-topic-map/)
 - 第 6 章 Keyword-to-Page：每个意图由谁承接
 - 第 7 章 URL Structure：把网站规划成一本书
 
