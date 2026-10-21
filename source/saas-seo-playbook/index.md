@@ -32,7 +32,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 - ✅ [第 5 章 从关键词研究到 Topic Map](/saas-seo-playbook/05-keyword-research-to-topic-map/)
 - ✅ [第 6 章 Keyword-to-Page：每个意图由谁承接](/saas-seo-playbook/06-keyword-to-page/)
-- 第 7 章 URL Structure：把网站规划成一本书
+- ✅ [第 7 章 URL Structure：把网站规划成一本书](/saas-seo-playbook/07-url-structure/)
 
 ### 第三部分：站内基建 — 让 Google 能看见、看懂、收录
 
