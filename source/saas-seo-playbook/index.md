@@ -39,7 +39,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 - ✅ [第 8 章 SEO 基建：从第一天搭好地基](/saas-seo-playbook/08-seo-foundation/)
 - ✅ [第 9 章 On-Page SEO：从主关键词到发布检查](/saas-seo-playbook/09-on-page-seo/)
 - ✅ [第 10 章 Technical SEO：真实踩坑与修复思路](/saas-seo-playbook/10-technical-seo-troubleshooting/)
-- 第 11 章 页面体验与 Core Web Vitals
+- ✅ [第 11 章 页面体验与 Core Web Vitals](/saas-seo-playbook/11-page-experience-core-web-vitals/)
 
 ### 第四部分：内容生产 — 不是写文章，是交付结果
 
