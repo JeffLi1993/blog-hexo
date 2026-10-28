@@ -36,7 +36,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 ### 第三部分：站内基建 — 让 Google 能看见、看懂、收录
 
-- 第 8 章 SEO 基建：从第一天搭好地基
+- ✅ [第 8 章 SEO 基建：从第一天搭好地基](/saas-seo-playbook/08-seo-foundation/)
 - 第 9 章 On-Page SEO：从主关键词到发布检查
 - 第 10 章 Technical SEO：真实踩坑与修复思路
 - 第 11 章 页面体验与 Core Web Vitals
