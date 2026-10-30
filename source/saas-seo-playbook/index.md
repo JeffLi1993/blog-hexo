@@ -43,7 +43,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 ### 第四部分：内容生产 — 不是写文章，是交付结果
 
-- 第 12 章 关键词优先级：先做什么，后做什么
+- ✅ [第 12 章 关键词优先级：先做什么，后做什么](/saas-seo-playbook/12-keyword-priority/)
 - 第 13 章 SERP Research：先看 Google 已经选了什么
 - 第 14 章 工具页 SEO 内容规范
 - 第 15 章 博客、教程、榜单、对比与替代页
