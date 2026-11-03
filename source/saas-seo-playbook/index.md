@@ -47,7 +47,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 - ✅ [第 13 章 SERP Research：先看 Google 已经选了什么](/saas-seo-playbook/13-serp-research/)
 - ✅ [第 14 章 工具页 SEO 内容规范](/saas-seo-playbook/14-tool-page-seo-content/)
 - ✅ [第 15 章 博客、教程、榜单、对比与替代页](/saas-seo-playbook/15-blog-content-formats/)
-- 第 16 章 信息增量与 E-E-A-T
+- ✅ [第 16 章 信息增量与 E-E-A-T](/saas-seo-playbook/16-information-gain-and-eeat/)
 - 第 17 章 内链：给 Google 和用户一张阅读地图
 
 ### 第五部分：站外信任 — 让外部世界为你投票
