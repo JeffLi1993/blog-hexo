@@ -60,8 +60,8 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 - ✅ [第 21 章 pSEO 的双刃剑](/saas-seo-playbook/21-programmatic-seo/)
 - ✅ [第 22 章 从收录到转化：SEO 数据复盘](/saas-seo-playbook/22-seo-data-review/)
-- 第 23 章 AI 搜索时代的 SEO 与 GEO
+- ✅ [第 23 章 AI 搜索时代的 SEO 与 GEO](/saas-seo-playbook/23-seo-and-geo/)
 
 ---
 
-*后续章节会陆续更新，欢迎持续关注。*
+*全书 23 章已全部发布，欢迎阅读、讨论与反馈。*
