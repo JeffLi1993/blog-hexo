@@ -59,9 +59,8 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 ### 第六部分：规模化与增长复盘
 
 - ✅ [第 21 章 pSEO 的双刃剑](/saas-seo-playbook/21-programmatic-seo/)
-- 第 22 章 国际化 SEO
-- 第 23 章 从收录到转化：SEO 数据复盘
-- 第 24 章 AI 搜索时代的 SEO 与 GEO
+- 第 22 章 从收录到转化：SEO 数据复盘
+- 第 23 章 AI 搜索时代的 SEO 与 GEO
 
 ---
 
