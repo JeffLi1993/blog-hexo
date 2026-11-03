@@ -53,7 +53,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 ### 第五部分：站外信任 — 让外部世界为你投票
 
 - ✅ [第 18 章 外链必知必会](/saas-seo-playbook/18-backlinks-basics/)
-- 第 19 章 AI 导航站、目录站与评测站的 0→1
+- ✅ [第 19 章 AI 导航站、目录站与评测站的 0→1](/saas-seo-playbook/19-ai-directories-and-launch-platforms/)
 - 第 20 章 可持续外链打法
 
 ### 第六部分：规模化与增长复盘
