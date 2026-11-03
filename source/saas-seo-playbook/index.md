@@ -54,7 +54,7 @@ header-img: https://bysocket.com/images/hello-world/header-img.webp
 
 - ✅ [第 18 章 外链必知必会](/saas-seo-playbook/18-backlinks-basics/)
 - ✅ [第 19 章 AI 导航站、目录站与评测站的 0→1](/saas-seo-playbook/19-ai-directories-and-launch-platforms/)
-- 第 20 章 可持续外链打法
+- ✅ [第 20 章 可持续外链打法](/saas-seo-playbook/20-sustainable-link-building/)
 
 ### 第六部分：规模化与增长复盘
 
